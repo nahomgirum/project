@@ -45,6 +45,20 @@
 
         </div>
 
+        <div class="controls">
+
+        <span class="vid-btn"   data-src="images/video-1.mp4"></span>
+        <span class="vid-btn"   data-src="images/video-2.mp4"></span>
+        
+        </div>
+
+        <div class="video-list">
+
+            <video src="images/video-1.mp4" id="video-slider"  loop autoplay muted> </video>
+            <video src="images/video-2.mp4" id="video-slider"  loop autoplay muted> </video>
+
+        </div>
+
 
 </section>
 
