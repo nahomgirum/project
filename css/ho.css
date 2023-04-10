@@ -24,7 +24,7 @@ html{
 }
 
 section{
-    padding:2rem  9%;
+    padding:2rem  3%;
 }
 
 header{
@@ -92,7 +92,7 @@ header .navbar a:hover{
 
 
 .home {
-    margin: 260px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,25 +107,122 @@ header .navbar a:hover{
 
 .home .first h3{
     font-size: 4.5rem;
+    color: aliceblue;
     text-transform: uppercase;
-    text-shadow: 0  .3rem .5rem rgba(255, 255, 255, 0.7);
+    text-shadow: 0  .3rem .5rem rgba(1, 27, 104, 0.7);
 }
 
 .home .first p{
-    margin: 15px 0px 0px 0px;
-    font-size: 2.3rem;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
-    text-shadow:   .3rem .5rem rgba(255, 255, 255, 0.75);
+    text-shadow: 0  .3rem .5rem rgba(1, 37, 93, 0.7);
 }
 
 .home .first .form-btn{
     margin: 25px 0px 0px 0px;
 }
 
+.home .video-list video{
+
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.images{
+    margin: 550px 0px 0px 0px;
+}
+.images .shake{
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    margin: 3  12px;
+    height: 300px;
+    width: 200px;
+}
+
+.images .shake1{
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    margin: -300px 0px 0px 370px;
+    height: 300px;
+    width: 300px;
+}
+
+.images .shake2{
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    margin: -300px 0px 0px 720px;
+    height: 300px;
+    width: 300px;
+}
+.images .shake3{
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    margin: -300px 0px 0px 1080px;
+    height: 300px;
+    width: 300px;
+}
+
+.home .controls{
+    padding: 1rem;
+    position: relative;
+    top: 10rem;
+    border-radius: 5rem;
+    background: rgba(0, 0,0,0.7);
+}
+
+.home .controls .vid-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0  3rem;
+}
+.home .controls .vid-btn.active{
+
+    background: var(--lightblue);
+
+}
+
+footer{
+    margin: 170px 0px 0px 0px;
+    background: #161631;
+    width:100%;
+    height: 350px;
+}
+
+
+.foot{
+    margin:0px 0px 0px 90px;
+    padding-top: 26px;
+    justify-content: space-between;
+}
+.fot {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+
+.copy{
+    font-size: 18px;
+    margin: 0px 0px 0px 500px;
+}
 
 
 body{
-    height: 300rem;
+    height: 180rem;
 }
 
 
@@ -137,6 +234,7 @@ body{
     }
     
 }
+
 
 
 @media (max-width:991px) {
@@ -164,7 +262,7 @@ body{
 }
 
  header .navbar .active{
-   /* clip-path: polygon(0 0 ,100% 0 , 100% 100%,0 100% );*/
+   clip-path: polygon(0 0 ,100% 0 , 100% 100%,0 100% );
 
  }
 header .navbar a{
