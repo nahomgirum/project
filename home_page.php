@@ -115,7 +115,7 @@
 
     </div>
 
-<footer class="fot">
+<div class="fot">
 
 
    <p>tel :0987308217</p> 
