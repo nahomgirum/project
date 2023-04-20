@@ -1,3 +1,12 @@
+<?PHP
+error_reporting(0);
+  
+$conn= mysqli_connect('localhost','root','','user_db');
+$res=mysqli_query($conn,"SELECT * FROM user_form ORDER by id ")
+ 
+?>  
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +22,10 @@
 
 
 <!--header start -->
-
+  <?php  
+  while ($row=mysqli_fetch_assoc($result)){ 
+    
+    ?>
 <header>
 
   <i  id="menu-bar" class="fas fa-bars"></i>
@@ -28,10 +40,13 @@
     <a href="posted story">posted stories</a>
     <a href="login">sign in</a>
     <a href="register">sign up</a>
+    <i class="fa-sharp fa-solid fa-user fa-2xl" style="color: #ffffff;"></i>
+    <p><?php  echo $row['$name'] ?></p>
+    <input type="text" >
     </nav>
-
+   
 </header>
-    
+     
 
 <!-- h str-->
 
@@ -132,6 +147,11 @@
     <p>copyright with 2022 ethiopia tour company plc</p>
 </div>
 
+<?php   
+
+}
+
+?>
 <!--script started-->
 <script src="js/script.js"></script>
 </body>
